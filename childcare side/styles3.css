@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body{
+    background: rgb(125,90,125);
+    background: -moz-radial-gradient(center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
+    background: -webkit-radial-gradient(center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
+    background: radial-gradient(ellipse at center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* original code below */
+/* h2{ 
+    padding-top: 10px;
+    margin-left:50px
+} */
+header{
+    margin-top: 100px;
+    width: 100vw;
+    height: 225px;
+   
+    
+}
+.navbar__menu{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(10, 195, 165);
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+.container .navbar__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 195, 165);
+    text-decoration: none;
+    font-style: none;
+    color: aliceblue;
+    padding: 20px 0;
+    transition: all .3s ease-in-out;
+}
+.navbar__menu ul {
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.3s ease-in-out;
+}
+/* updated a tag a li elements */
+a, li{
+    font-size: 24px;
+    color: aliceblue;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.box{
+    background-color: black;
+    background-image: url(../images/lady5.jpg);
+    background-position: 15%;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    width: 700px;
+    height: 600px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+.box:nth-of-type(even){
+    transform: translateX(-400%)
+}
+.box.show{
+    transform: translateX(0);
+}
+.box h2{
+    font-size: 45px;
+}
+p, h1, h2, h3, h4{
+    font-size: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+/* .container{
+    /* margin-top: 150px; */
+    /* display: flex;
+    flex-direction: row;
+    height: 20vh; */
+    /* height: 80vh;
+    width: 90vw;
+    transition: flex 5s ease-in; */
+    /* z-index: -1;
+} */
+
+/* .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex:0.9;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.8s ease-in;
+}
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin:0;
+    opacity: 0;
+}
+.panel.active{
+    border-radius: 50px;
+    flex:5;
+}
+.panel.active h3{
+    opacity: 1;
+} */
+
+.footer{
+ 
+    color: aliceblue;
+    background-color: rgb(10, 195, 165);
+    width: 100vw;
+    height: 40vh;
+    margin-top: 50px;
+    margin-left: 0px;
+    padding: 0;
+    line-height: 50px;
+}
+/* .about_me_sect{
+    image-orientation:  src="";
+}
+
+.contact__us__section{
+    height: 0vh;
+    width: 100vw;
+}
+.contact__us{
+    padding: 40px;
+    background-color: rgb(10, 195, 165);
+}
+#fill_in_form{
+    display: inline-flex;
+} */
+.navbar__menu.active{
+    background-color: white;
+    color: blueviolet;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar__menu.active a{
+    color: rgb(10, 195, 165);
+}
+.navbar__menu .container{
+    padding: 10px 0;
+}
+.navbar__menu a.active, .navbar__menu a:hover{
+    color: blueviolet;
+    font-weight: bolder;
+}
+@media(max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
+}

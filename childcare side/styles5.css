@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 25px;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: static;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-image: url(../images/mountains.webp);
+    background-attachment: fixed;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    margin-top: 50px;
+}
+.navbar__menu{
+    display: flex;
+    position: fixed;
+    height: 15vh;
+    background-color: rgb(10, 195, 165);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+.navbar__menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+li{
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* .img{
+   
+} */
+
+
+
+.content_forms{
+    color: black;
+    background-color: aliceblue;
+    opacity: .65;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: aliceblue;
+    font: 20px;
+    background-color: rgb(10, 195, 165);
+    width: 100%;
+    height: 45vh;
+    margin-bottom: -200px;
+    margin-top: 100px;
+    line-height: 50px;
+    z-index: 2;
+}
