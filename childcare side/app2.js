@@ -47,3 +47,41 @@ function fixNav() {
         nav.classList.remove('active')
     }
 }
+
+
+//code provided by ChatGPT
+// JavaScript
+// function overlay() {
+//     // Code for the overlay function goes here
+//   }
+  
+//   const panel1 = document.getElementById('panel1');
+//   const panel2 = document.getElementById('panel2');
+//   const panel3 = document.getElementById('panel3');
+  
+//   panel1.addEventListener('click', function() {
+//     overlay();
+//     panel1.classList.add('selected');
+//     panel2.classList.remove('selected');
+//     panel3.classList.remove('selected');
+//   });
+  
+//   panel2.addEventListener('click', function() {
+//     overlay();
+//     panel1.classList.remove('selected');
+//     panel2.classList.add('selected');
+//     panel3.classList.remove('selected');
+//   });
+  
+//   panel3.addEventListener('click', function() {
+//     overlay();
+//     panel1.classList.remove('selected');
+//     panel2.classList.remove('selected');
+//     panel3.classList.add('selected');
+//   });
+//   This code will call the overlay function when any of the panels is clicked, and it will add the selected class to the clicked panel and remove it from the other panels. You can use similar code to call the overlay function on hover by using the mouseover event instead of the click event.
+  
+  
+  
+  
+  
