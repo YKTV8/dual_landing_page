@@ -219,7 +219,11 @@ p, h2, h4{
         margin: 0;
     }
     .navbar__menu{
-        position:static;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position:absolute;
         height: fit-content;
         background-color: rgb(10, 195, 165);
         top: 0;
@@ -241,6 +245,14 @@ p, h2, h4{
         margin: 0px;
         transition: all 0.3s ease-in-out;
     }
+    .navbar__menu ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+     }
     .navbar__menu.active{
         background-color: white;
         color: blueviolet;
@@ -259,5 +271,6 @@ p, h2, h4{
     }
     .footer{
         width: 100%;
+        height: fit-content;
     }
 }

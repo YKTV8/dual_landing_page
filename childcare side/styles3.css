@@ -2,9 +2,10 @@
     box-sizing: border-box;
     margin: 0;
 }
-/* html{
+html{
     width: 100%;
-} */
+    overflow-x: hidden;
+}
 body{
     background: rgb(125,90,125);
     background: -moz-radial-gradient(center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
@@ -257,6 +258,12 @@ p, h1, h2, h3, h4{
        align-items: center;
        justify-content: center;
        transition: all 0.3s ease-in-out;
+    }
+        ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
     }
     /* updated a tag a li elements */
     a, li{
