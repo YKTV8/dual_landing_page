@@ -259,7 +259,7 @@ p, h1, h2, h3, h4{
        justify-content: center;
        transition: all 0.3s ease-in-out;
     }
-        ul{
+    ul{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

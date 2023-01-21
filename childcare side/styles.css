@@ -64,6 +64,7 @@ body{
     width: 55vw;
     background-color: rgb(10, 195, 165);
     border-radius: 55px;
+    margin-bottom: 20%;
     /* margin-left: 7%; */
 }
 /* section{
@@ -94,8 +95,8 @@ a , li{
     color: aliceblue;
     background-color: rgb(10, 195, 165);
     width: 100%;
-    height: fit-content;
-    margin-top: 10%;
+    height: 50vh;
+    /* margin-top: 10%; */
     padding: 0;
 }
 h1, h3{
@@ -271,6 +272,6 @@ p, h2, h4{
     }
     .footer{
         width: 100%;
-        height: fit-content;
+        height: 40vh;
     }
 }
