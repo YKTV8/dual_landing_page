@@ -83,8 +83,9 @@ h1,h3{
     margin-right: 10px;
 }
 p, h2, h4{
-    font-size: 27px;
+    font-size: 140%;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 30px;
     margin-right: 10px;
 }
@@ -273,7 +274,7 @@ z-index: -.2;
         }
         .navbar__menu{
             position:static;
-            width: 100%;
+            width: 150%;
             height: fit-content;
             background-color: rgb(10, 195, 165);
             top: 0;
@@ -314,11 +315,17 @@ z-index: -.2;
             flex-wrap: wrap;
             padding: 0;
         } */
+        p{
+            display: flex;
+            flex-wrap: wrap;
+        }
         .footer{
+            display: flex;
+            flex-wrap: wrap;
             margin-top: 350%;
             color: aliceblue;
             background-color: rgb(10, 195, 165);
-            width: 100%;
+            width: fit-content;
             height: fit-content;
             margin-left: 0px;
             padding: 0 10%;
