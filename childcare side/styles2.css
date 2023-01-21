@@ -316,5 +316,12 @@ z-index: -.2;
         } */
         .footer{
             margin-top: 350%;
+            color: aliceblue;
+            background-color: rgb(10, 195, 165);
+            width: 100%;
+            height: fit-content;
+            margin-left: 0px;
+            padding: 0 10%;
+            line-height: 50px;
         }
     }

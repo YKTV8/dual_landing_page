@@ -307,13 +307,13 @@ p, h1, h2, h3, h4{
     }
     .footer{
      
+        margin-top: 350%;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
         width: 100%;
         height: fit-content;
-        margin-top: 50px;
         margin-left: 0px;
-        padding: 0;
+        padding: 0 10%;
         line-height: 50px;
     }
     .navbar__menu.active{
@@ -442,14 +442,13 @@ p, h1, h2, h3, h4{
         margin-right: 10px;
     }
     .footer{
-     
+        margin-top: 350%;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
         width: 100%;
         height: fit-content;
-        margin-top: 50px;
         margin-left: 0px;
-        padding: 0;
+        padding: 0 10%;
         line-height: 50px;
     }
     .navbar__menu.active{
