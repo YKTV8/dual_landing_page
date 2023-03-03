@@ -61,7 +61,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     height: 280%;
     width: 700px;
     background-color: black;
@@ -90,7 +90,7 @@ img{
 a , li{
     font-size: 24px;
     color: aliceblue;
-    margin: 20px;
+    margin: 5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -163,7 +163,7 @@ p, h2, h4{
 @media only screen and (min-width:1760px) and (max-width:6000px) {
     .container1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 280%;
@@ -183,6 +183,7 @@ p, h2, h4{
     section{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
 }
     .footer{
@@ -228,6 +229,7 @@ p, h2, h4{
     }
     section{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 }
@@ -244,7 +246,7 @@ p, h2, h4{
 
     .container1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 280%;
@@ -261,7 +263,6 @@ p, h2, h4{
         /* background-position: 0%; */
         padding-top: 45%;
         width: 200%;
-        /*  */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
@@ -279,7 +280,7 @@ p, h2, h4{
     .logo{
         max-width: 100%;
         margin: 0;
-        margin-top: 60%;
+        margin-top: 0%;
         height: max-content;
         display: flex;
         /* justify-content: flex-start;
@@ -300,13 +301,14 @@ p, h2, h4{
         display: flex;
         flex-wrap: wrap;
         width: 65%;
-        padding-left: 10%;
+        padding-left: 1%;
         padding-right: 1%;
         font-size: 140%;
         margin: 0;
     }
     section{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 }
