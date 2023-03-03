@@ -307,7 +307,7 @@ p, h1, h2, h3, h4{
     }
     .footer{
      
-        margin-top: 350%;
+        margin-top: 0%;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
         width: 100%;
@@ -442,7 +442,7 @@ p, h1, h2, h3, h4{
         margin-right: 10px;
     }
     .footer{
-        margin-top: 350%;
+        margin-top: 0%;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
         width: 100%;

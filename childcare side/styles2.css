@@ -87,6 +87,10 @@ a, li{
     padding: 0;
     line-height: 245%;
 }
+.footer,p,h4{
+            font-size:55%;
+            margin: 0;
+        }
 h1,h3{
     font-size: 45px;
     display: flex;
@@ -101,32 +105,32 @@ p, h2, h4{
     margin-left: 30px;
     margin-right: 10px;
 }
-.container:active .overlay{
+/* .container:active .overlay{
     opacity: .75;
     transform: translateY(0%);
-}
+} */
 /*below is the code that is activated on 'click' to display overlay.*/
-.container1:hover .overlay{ 
+.panel:hover .overlay{ 
     opacity: .75;
     transform:translateY(0%)
 }
-.container1:hover .overlay1{ 
+.panel:hover .overlay1{ 
     opacity: .75;
     transform:translateY(0%)
 }
-.container1:hover .overlay2{ 
+.panel:hover .overlay2{ 
     opacity: .75;
     transform:translateY(0%)
 }
-.container1:hover .overlay3{ 
+.panel:hover .overlay3{ 
     opacity: .75;
     transform:translateY(0%)
 }
-.container1:hover .overlay4{ 
+.panel:hover .overlay4{ 
     opacity: .75;
     transform:translateY(0%)
 }
-.container1:hover .overlay5{ 
+.panel:hover .overlay5{ 
     opacity: .75;
     transform:translateY(0%)
 }
@@ -275,7 +279,8 @@ z-index: -.2;
         color: blueviolet;
         font-weight: bolder;
     }
-    @media screen and (min-width:0px) and (max-width:799px) {
+    /* 100px thru 799px */
+    @media screen and (min-width:100px) and (max-width:799px) {
 
         html{
             width: fit-content;
@@ -419,10 +424,6 @@ z-index: -.2;
             position: relative;
             margin-bottom: 20px;
         } */
-        .container1{
-            display: flex;
-            flex-direction: column;
-        }
         .navbar__menu ul{
             display: flex;
             flex-direction: row;
@@ -442,10 +443,14 @@ z-index: -.2;
             color: aliceblue;
             background-color: rgb(10, 195, 165);
             max-width: 2200px;
-            height: 45vh;
+            height: 30vh;
             margin-top: 200px;
             padding: 0;
             line-height: 245%;
+        }
+        .footer,p,h4{
+            font-size:55%;
+            margin: 0;
         }
         h1,h3{
             font-size: 45px;
@@ -466,27 +471,27 @@ z-index: -.2;
             transform: translateY(0%);
         }
         /*below is the code that is activated on 'click' to display overlay.*/
-        .container1:hover .overlay{ 
+        .panel:hover .overlay{ 
             opacity: .75;
             transform:translateY(0%)
         }
-        .container1:hover .overlay1{ 
+        .panel:hover .overlay1{ 
             opacity: .75;
             transform:translateY(0%)
         }
-        .container1:hover .overlay2{ 
+        .panel:hover .overlay2{ 
             opacity: .75;
             transform:translateY(0%)
         }
-        .container1:hover .overlay3{ 
+        .panel:hover .overlay3{ 
             opacity: .75;
             transform:translateY(0%)
         }
-        .container1:hover .overlay4{ 
+        .panel:hover .overlay4{ 
             opacity: .75;
             transform:translateY(0%)
         }
-        .container1:hover .overlay5{ 
+        .panel:hover .overlay5{ 
             opacity: .75;
             transform:translateY(0%)
         }
@@ -523,6 +528,7 @@ z-index: -.2;
         }
         .container1{
             margin-top: 150px;
+            margin-bottom: 100px;
             display: flex;
             flex-direction: row;
             height: 80vh;

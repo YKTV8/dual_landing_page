@@ -1,6 +1,6 @@
-/* *{
+*{
     box-sizing: border-box;
-} */
+}
 html{
     background-image: url(../images/shot-stash-creative-paint-palette.jpg);
     height: 100vh;
@@ -59,17 +59,21 @@ body{
 }
 .container1{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     height: 280%;
     width: 700px;
     background-color: black;
     border-radius: 55px;
     margin-bottom: 20%;
-    /* margin-left: 7%; */
+    margin-left: 5%;
 }
-/* section{
-    padding:40%;
-} */
+section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 img{
     height: 500px;
     width: 600px;
@@ -121,6 +125,7 @@ p, h2, h4{
     font-size: 140%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 .hero::before{
     content:'';
@@ -159,11 +164,12 @@ p, h2, h4{
     .container1{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         height: 280%;
         width: 50%;
         background-color: rgb(10, 195, 165);
         border-radius: 55px;
-        /* margin-left: 7%; */
     }
     section p{
         display: flex;
@@ -174,6 +180,11 @@ p, h2, h4{
         font-size: 140%;
         margin: 0;
     }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
     .footer{
         color: aliceblue;
         background-color: rgb(10, 195, 165);
@@ -184,15 +195,15 @@ p, h2, h4{
     
 }
 @media screen and (min-width:800px) and (max-width:1759px) {
-
     .container1{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         height: 280%;
         width: 55%;
         background-color: rgb(10, 195, 165);
         border-radius: 55px;
-        margin-left: 7%;
     }
     section p{
         display: flex;
@@ -215,6 +226,11 @@ p, h2, h4{
         width: 80%;
         height: 80%;
     }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
     .footer{
         color: aliceblue;
         background-color: rgb(10, 195, 165);
@@ -222,12 +238,15 @@ p, h2, h4{
         height: fit-content;
         padding: 1% 20% 1% 2%;
     }
+
 }
 @media screen and (min-width:100px) and (max-width:799px) {
 
     .container1{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         height: 280%;
         width: 95%;
         background-color: rgb(10, 195, 165);
@@ -286,6 +305,11 @@ p, h2, h4{
         font-size: 140%;
         margin: 0;
     }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
     .navbar__menu{
         display: flex;
         flex-direction: column;
