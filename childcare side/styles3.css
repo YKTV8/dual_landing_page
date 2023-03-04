@@ -101,14 +101,14 @@ a, li{
 .box h2{
     font-size: 45px;
 }
-p, h1, h2, h3, h4{
+/* p, h1, h2, h3, h4{
     font-size: 27px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
     margin-right: 10px;
 
-}
+} */
 /* .container{
     /* margin-top: 150px; */
     /* display: flex;
@@ -119,36 +119,6 @@ p, h1, h2, h3, h4{
     transition: flex 5s ease-in; */
     /* z-index: -1;
 } */
-
-/* .panel {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 20vh;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    flex:0.9;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.8s ease-in;
-}
-.panel h3{
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin:0;
-    opacity: 0;
-}
-.panel.active{
-    border-radius: 50px;
-    flex:5;
-}
-.panel.active h3{
-    opacity: 1;
-} */
-
 .footer{
  
     color: aliceblue;
@@ -160,21 +130,6 @@ p, h1, h2, h3, h4{
     padding: 0;
     line-height: 50px;
 }
-/* .about_me_sect{
-    image-orientation:  src="";
-}
-
-.contact__us__section{
-    height: 0vh;
-    width: 100vw;
-}
-.contact__us{
-    padding: 40px;
-    background-color: rgb(10, 195, 165);
-}
-#fill_in_form{
-    display: inline-flex;
-} */
 .navbar__menu.active{
     background-color: white;
     color: blueviolet;
@@ -190,7 +145,7 @@ p, h1, h2, h3, h4{
     color: blueviolet;
     font-weight: bolder;
 }
-@media screen and (min-width:1px) and (max-width:799px) {
+@media screen and (min-width:1px) and (max-width:800px) {
     
     body{
         background: rgb(125,90,125);
@@ -298,15 +253,22 @@ p, h1, h2, h3, h4{
     .box h2{
         font-size: 45px;
     }
-    p, h1, h2, h3, h4{
+    /* p, h1, h2, h3, h4{
         font-size: 27px;
         display: flex;
         flex-wrap: wrap;
         margin-left: 30px;
         margin-right: 10px;
+    } */
+    .footer,p,h4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size:85%;
+        margin: 0;
     }
-    .footer{
-     
+    /* .footer{
+        font-size: 55%;
         margin-top: 0%;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
@@ -315,6 +277,20 @@ p, h1, h2, h3, h4{
         margin-left: 0px;
         padding: 0 10%;
         line-height: 50px;
+    } */
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        color: aliceblue;
+        background-color: rgb(10, 195, 165);
+        width: 100vw;
+        height: 45vh;
+        margin-left: 0px;
+        padding: 0 2%;
+        line-height: auto;
     }
     .navbar__menu.active{
         background-color: white;

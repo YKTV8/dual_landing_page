@@ -21,7 +21,7 @@ body::before{
     position: absolute;
     background-color: var(--bg-color);
     width: 100%;
-    height: 250%;
+    height: 275%;
     z-index: -1;
 }
 nav{
@@ -33,6 +33,9 @@ ul{
     display: flex;
     flex-direction: row;
 }
+ol{
+    padding: 0;
+}
 li{
     padding: 2%;
     list-style: none;
@@ -41,6 +44,23 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+p{
+    padding: 1%;
+}
+.contactinfo{
+    padding-top: 5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    
+    border-radius: 3%;
+    background-color: rgba(21, 157, 73, 0.75);
 }
 .aboutme{
     background-image: url(../images/cover1.png);

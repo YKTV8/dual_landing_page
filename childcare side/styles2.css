@@ -279,8 +279,8 @@ z-index: -.2;
         color: blueviolet;
         font-weight: bolder;
     }
-    /* 100px thru 799px */
-    @media screen and (min-width:100px) and (max-width:799px) {
+    /* 100px thru 800px */
+    @media screen and (min-width:100px) and (max-width:800px) {
 
         html{
             width: fit-content;
@@ -290,17 +290,17 @@ z-index: -.2;
             width: 100%;
             overflow-x: hidden;
         }
-        .container1{
+        /* .container1{
             display: flex;
             flex-direction: column;
             width: 80%;
-        }
+        } */
         .container1{
             margin-top: 150px;
             margin-bottom: 100px;
             display: flex;
             flex-direction: column;
-            height: 80vh;
+            height: 130vh;
             width: 90vw;
             transition: flex 5s ease-in;
             z-index: -5;
@@ -317,6 +317,11 @@ z-index: -.2;
             left: 0;
             right: 0;
             transition: all .3s ease-in-out;
+        }
+        .navbar__menu h2{
+            justify-content: center;
+            align-items: center;
+            align-content: center;
         }
         .container .navbar__menu{
             display: flex;
@@ -368,24 +373,25 @@ z-index: -.2;
         }
         .footer{
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            flex-direction: column;
             justify-content: left;
             align-items: center;
             margin-top: 345%;
             color: aliceblue;
             background-color: rgb(10, 195, 165);
-            width: fit-content;
-            height: 45%;
+            width: 100vw;
+            height: 40vh;
             margin-left: 0px;
             padding: 0 2%;
             line-height: auto;
         }
-        .footer,p,h4{
-            font-size:85%;
+        .footer p h4{
+            font-size:95%;
             width: fit-content;
         }
     }
-    @media screen and (min-width:800px) and (max-width:6759px){
+    @media screen and (min-width:801px) and (max-width:6759px){
         *{
             box-sizing: border-box;
             margin: 0 auto;
