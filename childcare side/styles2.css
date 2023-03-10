@@ -1,16 +1,14 @@
-/* body{
-    overflow-x: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 27px;
-    background: rgb(125,90,125);
-    background: -moz-radial-gradient(center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
-    background: -webkit-radial-gradient(center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
-    background: radial-gradient(ellipse at center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
-} */
 *{
     box-sizing: border-box;
     margin: 0 auto;
 }
+html{
+    height: 100vh;
+    width: 100vw;
+    background-repeat: none;
+    background-position: fixed;
+    overflow-x: hidden;
+} 
 body{
     /* background-color: rgb(125, 90, 125); */
     overflow-x: hidden;
@@ -21,24 +19,22 @@ body{
     background: -webkit-radial-gradient(center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
     background: radial-gradient(ellipse at center, rgb(179, 147, 179) 0%, rgb(125,90,125) 52%, rgb(179,147,179) 100%);
 }
-.container{
+/* .container{
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+    justify-content: center;
+    align-items: center;
+} */
 .navbar__menu{
-    width: 100%;
     position: fixed;
     background-color: rgb(10, 195, 165);
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
     transition: all .3s ease-in-out;
 }
-/* .container .navbar__menu h2{
+.container .navbar__menu{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,17 +43,9 @@ body{
     font-style: none;
     color: aliceblue;
     padding: 20px 0;
-    transition: all .3s ease-in-out;
-} */
-/* .hero{
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-} */
+    margin: 0px;
+    transition: all 0.3s ease-in-out;
+}
 .container1{
     display: flex;
     flex-direction: column;
@@ -78,32 +66,43 @@ a, li{
     text-decoration: none;
     cursor: pointer;
 }
-.footer{
-    color: aliceblue;
-    background-color: rgb(10, 195, 165);
-    max-width: 2200px;
-    height: 45vh;
-    margin-top: 200px;
-    padding: 0;
-    line-height: 245%;
-}
-/* .footer,p,h4{
-            font-size:55%;
-            margin: 0;
-        } */
-h1,h3{
-    font-size: 45px;
+p, h2, h4{
+    font-size: 140%;
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: 30px;
-    margin-right: 10px; */
+    margin: 0;
 }
-.footer p,h2, h4{
+address{
+    font-size: 280%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p, h4{
     font-size: 140%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
     margin-right: 10px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: rgb(10, 195, 165);
+    /* max-width: 2200px; */
+    width: 100vw;
+    height: 45vh;
+    margin-top: 200px;
+    padding: 0;
+    line-height: 245%;
+}
+h1,h3{
+    font-size: 45px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* .container:active .overlay{
     opacity: .75;
@@ -287,11 +286,11 @@ z-index: -.2;
     }
     /* 100px thru 800px */
     @media screen and (min-width:100px) and (max-width:391px) {
-
+/* 
         html{
             width: fit-content;
             overflow-x: hidden;
-        }
+        } */
         body{
             width: 100%;
             overflow-x: hidden;
@@ -323,8 +322,11 @@ z-index: -.2;
             opacity: 0;
         }
         .navbar__menu{
-            position:static;
-            width: 150%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position:absolute;
+            width: 100%;
             height: fit-content;
             background-color: rgb(10, 195, 165);
             top: 0;
@@ -332,14 +334,13 @@ z-index: -.2;
             right: 0;
             transition: all .3s ease-in-out;
         }
-        .navbar__menu h2{
+        /* .navbar__menu h2{
            display: flex;
            flex-wrap: wrap;
            flex-direction: column;
            justify-content: center;
            align-items: center;
-
-        }
+        } */
         .container .navbar__menu{
             display: flex;
             flex-wrap: wrap;
@@ -350,7 +351,7 @@ z-index: -.2;
             text-decoration: none;
             font-style: none;
             color: aliceblue;
-            padding: 20px 0;
+            padding: 0px 0;
             margin: 0px;
             transition: all 0.3s ease-in-out;
         }
@@ -472,7 +473,7 @@ z-index: -.2;
         } */
         .container1 p{
             /* font-size-adjust: 58; */
-            font-size: .6rem;
+            font-size: .5rem;
             padding: 0% 0%;
         }
         h2{
@@ -483,20 +484,23 @@ z-index: -.2;
             align-items: center;
             justify-content: center;
         }
+        h3{
+            display:none
+        }
         .footer{
             display: flex;
             flex-wrap: nowrap;
             flex-direction: column;
-            justify-content: left;
+            justify-content: center;
             align-items: center;
             margin-top: 345%;
             color: aliceblue;
             background-color: rgb(10, 195, 165);
-            width: 100vw;
-            height: 30%;
+            width: 100%;
+            height: max-content;
             margin-left: 0px;
             padding: 0 0%;
-            line-height: 100%;
+            line-height: 90%;
         }
         .footer p,h4{
             font-size:55%;
@@ -534,8 +538,11 @@ z-index: -.2;
             padding:40% 0%;
         }
         .navbar__menu{
-            position:static;
-            width: 150%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position:absolute;
+            width: 100%;
             height: fit-content;
             background-color: rgb(10, 195, 165);
             top: 0;
@@ -544,9 +551,11 @@ z-index: -.2;
             transition: all .3s ease-in-out;
         }
         .navbar__menu h2{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            align-content: center;
+            
         }
         .container .navbar__menu{
             display: flex;
@@ -680,7 +689,7 @@ z-index: -.2;
         } */
         .container1 p{
             /* font-size-adjust: 58; */
-            font-size: .8rem;
+            font-size: 1.1rem;
             padding: 2% 0%;
         }
         h2{
@@ -711,6 +720,23 @@ z-index: -.2;
             width: fit-content;
         }
     }
+    @media screen and (min-width:340px)and (max-width:463px){
+        .container1 p{
+            /* font-size-adjust: 58; */
+            font-size: .65rem;
+            padding: 2% 0%;
+        }
+        h3{
+            display:none
+        }
+    }
+    @media screen and (min-width:464px)and (max-width:590px){
+        .container1 p{
+            /* font-size-adjust: 58; */
+            font-size: .82rem;
+            padding: 2% 0%;
+        }
+    }
     @media screen and (min-width:801px) and (max-width:1680px){
         *{
             box-sizing: border-box;
@@ -730,18 +756,20 @@ z-index: -.2;
             max-width: 100%;
             margin: 0 auto;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
         }
         .navbar__menu{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position:absolute;
             width: 100%;
-            height: 20%;
-            position: fixed;
+            height: fit-content;
             background-color: rgb(10, 195, 165);
             top: 0;
             left: 0;
             right: 0;
-            z-index: 2;
             transition: all .3s ease-in-out;
         }
         .container .navbar__menu{
@@ -870,8 +898,8 @@ z-index: -.2;
         }
         .container1 p{
             /* font-size-adjust: 58; */
-            font-size: 1.3rem;
-            padding: 5% 0%;
+            font-size: 1.15rem;
+            padding: 2% 0%;
         }
         .overlay{
             background-color: white;
@@ -998,19 +1026,23 @@ z-index: -.2;
             max-width: 100%;
             margin: 0 auto;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
         }
+        /* the code below is allowed the navbar to change */
         .navbar__menu{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position:fixed;
             width: 100%;
-            height: 20%;
-            position: fixed;
+            height: fit-content;
             background-color: rgb(10, 195, 165);
             top: 0;
             left: 0;
             right: 0;
-            z-index: 2;
             transition: all .3s ease-in-out;
+            z-index: 1;
         }
         .container .navbar__menu{
             display: flex;
@@ -1052,19 +1084,20 @@ z-index: -.2;
             font-size:55%;
             margin: 0;
         } */
-        h1,h3{
+        /* h1,h3{
             font-size: 45px;
             display: flex;
             flex-wrap: wrap;
             margin-left: 30px;
             margin-right: 10px;
-        }
+        } */
         h2, h4{
             font-size: 140%;
             display: flex;
+            flex-direction: row;
             flex-wrap: nowrap;
-            margin-left: 30px;
-            margin-right: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         .container:active .overlay{
             opacity: .75;
@@ -1138,8 +1171,8 @@ z-index: -.2;
         }
         .container1 p{
             /* font-size-adjust: 58; */
-            font-size: 2.4rem;
-            padding: 10% 0%;
+            font-size: 2.2rem;
+            padding: 5% 0%;
         }
         .overlay{
             background-color: white;

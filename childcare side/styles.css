@@ -4,7 +4,7 @@
 html{
     background-image: url(../images/shot-stash-creative-paint-palette.jpg);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-repeat: none;
     background-position: fixed;
     overflow-x: hidden;
@@ -15,11 +15,11 @@ body{
     overflow-x: hidden;
 }
 .logo{
-    max-width: 140%;
+    max-width: 100%;
     /* margin: 0 auto; */
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 .navbar__menu{
     position: fixed;
@@ -63,17 +63,29 @@ body{
     align-items: center;
     flex-direction: column;
     height: 280%;
-    width: 700px;
-    background-color: black;
+    width: 100;
+    /* background-color: black; */
     border-radius: 55px;
-    margin-bottom: 20%;
-    margin-left: 5%;
+    margin-bottom: 10%;
+    margin-left: 25%;
 }
 section{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10%;
 }
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .container1, section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 img{
     height: 500px;
     width: 600px;
@@ -94,14 +106,34 @@ a , li{
     text-decoration: none;
     cursor: pointer;
 }
+h3, p{
+    font-size: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+address{
+    font-size: 280%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer,p,h4{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     font-size:85%;
     margin: 0;
 }
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: rgb(10, 195, 165);
+    height: max-content;
     /* margin-top: 20%;
     color: aliceblue;
     background-color: rgb(10, 195, 165);
@@ -109,21 +141,23 @@ a , li{
     height: fit-content;
     margin-left: 0px;
     padding: 5% 10%; */
-    color: aliceblue;
+    /* below reactive */
+    /* color: aliceblue;
     background-color: rgb(10, 195, 165);
     height: fit-content;
     margin-top: 200px;
     padding: 5%;
-    line-height: 50px;
+    line-height: 50px; */
+}
+.footer p{
+    font-size: 280%;
+    padding: 2%;
 }
 h1, h3{
     color: blueviolet;
     font-size: 82px;
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: 30px;
-    margin-right: 10px; */
-    /* text-shadow: 1px 0px 1px #000000, 0px 1px 1px #EEEEEE, 2px 1px 1px #000000, 1px 2px 1px #EEEEEE, 3px 2px 1px #000000, 2px 3px 1px #EEEEEE, 4px 3px 1px #000000, 3px 4px 1px #EEEEEE, 5px 4px 1px #000000, 4px 5px 1px #EEEEEE, 6px 5px 1px #000000, 5px 6px 1px #EEEEEE, 7px 6px 1px #000000, 2px 2px 2px rgba(0,0,0,0); */
     text-shadow: 4px 3px 0 #7A7A7A;
 
 }
@@ -176,6 +210,7 @@ p, h2, h4{
         width: 50%;
         background-color: rgb(10, 195, 165);
         border-radius: 55px;
+        margin: 10%, 5%;
     }
     section p{
         display: flex;
@@ -197,7 +232,7 @@ p, h2, h4{
         background-color: rgb(10, 195, 165);
         width: 100%;
         height: fit-content;
-        padding: 1% 20% 1% 2%;
+        /* padding: 1% 20% 1% 2%; */
     }
     
 }
@@ -211,6 +246,7 @@ p, h2, h4{
         width: 55%;
         background-color: rgb(10, 195, 165);
         border-radius: 55px;
+        margin: 25%;
     }
     section p{
         display: flex;
@@ -222,7 +258,7 @@ p, h2, h4{
         margin: 0;
     }
     h2{
-        padding-left: 5%;
+        padding-left: 0%;
     }
     h3{
         margin-left: 5%;
@@ -244,7 +280,7 @@ p, h2, h4{
         background-color: rgb(10, 195, 165);
         width: 100%;
         height: fit-content;
-        padding: 1% 20% 1% 2%;
+        /* padding: 1% 20% 1% 2%; */
     }
 
 }
@@ -256,17 +292,14 @@ p, h2, h4{
         justify-content: center;
         align-items: center;
         height: 280%;
-        width: 95%;
+        width: 100%;
         background-color: rgb(10, 195, 165);
         border-radius: 55px;
+        margin: 10% 0%;
     }
-    /* header{
-        width: 100%;
-    } */
     .hero{
         background-image: url(../images/cars.jpg);
         background-size: cover;
-        /* background-position: 0%; */
         padding-top: 45%;
         width: 200%;
         background-repeat: no-repeat;
@@ -296,7 +329,6 @@ p, h2, h4{
         display: flex;
         flex-wrap: wrap;
         font-size: 360%;
-        /* padding-top: 60%; */
         background-color: rgba(0, 0, 0, 0.4);
     }
     h3{
@@ -373,8 +405,8 @@ p, h2, h4{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: left;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
         width: 100vw;
@@ -383,20 +415,50 @@ p, h2, h4{
         padding: 0 2%;
         line-height: auto;
     }
-    .footer,p,h4{
+    /* .footer,p{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         font-size:95%;
         margin: 0;
+    } */
+    address{
+        font-size: 280%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    /* .footer{
-        margin-top: 50%;
+    .footer,p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size:45%;
+        margin: 0;
+    }
+    .footer{
+        color: aliceblue;
+        background-color: rgb(10, 195, 165);
+        height: max-content;
+        /* margin-top: 20%;
         color: aliceblue;
         background-color: rgb(10, 195, 165);
         width: 100%;
         height: fit-content;
-        padding: 5% 20% 5% 2%;
+        margin-left: 0px;
+        padding: 5% 10%; */
+        /* below reactive */
+        /* color: aliceblue;
+        background-color: rgb(10, 195, 165);
+        height: fit-content;
+        margin-top: 200px;
+        padding: 5%;
+        line-height: 50px; */
+    }
+    /* .footer p{
+        font-size: 280%;
+        padding: 2%;
     } */
     address{
         display: flex;
