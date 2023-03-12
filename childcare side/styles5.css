@@ -39,7 +39,7 @@ body{
 }
 .navbar__menu ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@ body{
 li{
     font-size: 20px;
     color: black;
-    margin: 20px;
+    margin: 0px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -75,6 +75,36 @@ h1{
     color: rgb(10, 195, 165);
     font: 20px;
     background-color: rgb(10, 195, 165);
-    width: 100vw;
+    width: 100%;
     z-index: 2;
+}
+@media screen and (min-width:150px) {
+
+    .content_forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-color: aliceblue;
+    opacity: .65;
+    padding: 10%;
+    font-size: 70%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+}
+.navbar__menu{
+    display: flex;
+    position: fixed;
+    height: min-content;
+    background-color: rgb(10, 195, 165);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
 }
