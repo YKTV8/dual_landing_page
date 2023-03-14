@@ -78,7 +78,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #72887c; }
+  background: #000000e2; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -91,7 +91,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #000000;
+  color: #E0AA3E;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -112,10 +112,10 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #000000;
+  color: #E0AA3E;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #000000;
+    border-bottom-color: #ffffff;
     color: #ffffff !important; }
     a:hover strong {
       color: inherit; }
@@ -131,7 +131,8 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #f7fcff;
+  /* color: #FFD700; */
+  color: #ffffff;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1069,7 +1070,7 @@ select {
   text-overflow: ellipsis; }
   select option {
     color: #3d4449;
-    background: #ffffff; }
+    background: #323232; }
   select:focus::-ms-value {
     background-color: transparent; }
   select::-ms-expand {
@@ -1141,7 +1142,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: #3d4449;
     border-color: #3d4449;
-    color: #ffffff;
+    color: #323232;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -1376,7 +1377,7 @@ ul.contact {
       font-family: 'Font Awesome 5 Free';
       font-weight: 400; }
     ul.contact li:before {
-      color: #f56a6a;
+      color: #000000;
       display: inline-block;
       font-size: 1.5em;
       height: 1.125em;
@@ -1496,7 +1497,7 @@ button,
   border-radius: 0.375em;
   border: 0;
   box-shadow: inset 0 0 0 2px #000000;
-  color: #ffffff !important;
+  color: #323232 !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1515,7 +1516,7 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(245, 106, 106, 0.05); }
+    background-color: rgba(255, 255, 255, 0.05); }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
@@ -1642,7 +1643,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: #ffffff;
+        color: #323232;
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -1928,12 +1929,20 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #6b737a;
+  background-color: #E0AA3E;
   font-size: 0.9em;
   position: relative;
   width: 26em; }
+  #sidebar p{
+    color: black;
+  }
+  #sidebar ul{
+    color: #000000;
+  }
   #sidebar h2 {
+    color: #000000;
     font-size: 1.38889em; }
+
   #sidebar > .inner {
     padding: 2.22222em 2.22222em 2.44444em 2.22222em ;
     position: relative;
@@ -1949,7 +1958,7 @@ button,
         margin-bottom: 0;
         padding-bottom: 0; }
     #sidebar > .inner > .alt {
-      background-color: #eff1f2;
+      background-color: #E0AA3E;
       border-bottom: 0;
       margin: -2.22222em 0 4.44444em -2.22222em;
       padding: 2.22222em;
@@ -2000,6 +2009,7 @@ button,
     margin-left: -26em; }
   @media screen and (max-width: 1680px) {
     #sidebar {
+      color: #E0AA3E;
       width: 24em; }
       #sidebar > .inner {
         padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
@@ -2020,6 +2030,7 @@ button,
         margin-left: -24em; } }
   @media screen and (max-width: 1280px) {
     #sidebar {
+      color: #E0AA3E;
       box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
       height: 100%;
       left: 0;
@@ -2054,13 +2065,13 @@ button,
       text-indent: 7.25em;
       width: 7.25em; }
       #sidebar .toggle:before {
-        color: #7f888f;
+        color: #E0AA3E;
         margin-left: -0.0625em;
         margin-top: -0.25em;
         font-size: 1.1rem;
         z-index: 1; }
       #sidebar .toggle:after {
-        background: rgba(222, 225, 226, 0.75);
+        background: rgba(0, 0, 0, 0.75);
         border-radius: 0.375em;
         content: '';
         height: 3.5em;
@@ -2187,7 +2198,7 @@ button,
 
 /* Footer */
 #footer .copyright {
-  color: #9fa3a6;
+  color: #000000;
   font-size: 0.9em; }
   #footer .copyright a {
     color: inherit; }
