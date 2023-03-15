@@ -13,7 +13,7 @@
         $name = $_POST["name"];
         $email = $_POST["email"];
         $message = $_POST["message"];
-        $toEmail = $_POST["gmatthews2787@outlook.com"];
+        $toEmail = "gmatthews2787@gmail.com";
 
         $mailHeaders = "Name: " . $name . 
         "\r\n Email: " . $email . 
@@ -29,7 +29,7 @@
     ?>
     <main>
         <p>send Email</p>
-        <form method="post" name="emailContact">
+        <form method="POST" name="./assets/php/email.php">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" >
             <label for="email">Email:</label>
@@ -37,7 +37,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
             <!-- <button type="submit">Submit</button> -->
-            <input type="submit" name="send" value="Submitttttt">
+            <input type="submit" name="send" value="Ssus">
             <?php if(!empty($message)){ echo $message;
                  } ?>
           </form>
