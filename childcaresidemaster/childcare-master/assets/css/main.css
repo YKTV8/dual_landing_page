@@ -2700,6 +2700,7 @@ input, select, textarea {
 		background-image: url("/childcaresidemaster/childcare-master/images/covercc.png");
 		background-position: center center;
 		background-size: cover;
+		width: 100vw;
 		height: 28em;
 		text-align: center;
 		position: relative;
