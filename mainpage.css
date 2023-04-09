@@ -7,18 +7,132 @@
 
     --other-width:25%;
     --hover-width:75%;
+    --other-height:25%;
+    --hover-height:75%;
 
     --speed: 1s;
 }
-
+html{
+    margin: 0;
+}
 *{
     box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
-
-body {
+/* Smaller than Mobile Breakpoint */
+@media screen and (max-width:468px) {
+    body {
+        display:block;
+        flex-direction: column;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        top: -30;
+        left: -30;
+        width: calc(100vw + 60px);
+        height: calc(100vh + 60px);
+        z-index: -1;
+        filter: blur(0px);
+        overflow-x: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: min-content;
+        width:min-content ;
+        overflow:hidden ;
+    }
+    h1 {
+        font-size: 4rem;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top:20%;
+        transform: translateX(0%);
+        white-space: nowrap;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+        background-color: black;
+    }    
+    .split{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .split.left{
+        /* left: 0; */
+        top: 0;
+        background:url('./images/daycarepencils.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .split.left::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--left-bg-color)
+    }
+    .split.right{
+        /* right: 0; */
+        bottom: 0;
+        background:url('./images/webdev.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .split.right::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--right-bg-color)
+    }
+    .hover-left .left{
+        height: var(--hover-height);
+    }
+    
+    .hover-left .right{
+        height: var(--other-height);
+    }
+    .hover-right .right{
+        height: var(--hover-height);
+    }
+    
+    .hover-right .left{
+        height: var(--other-height);
+    }
+    .split.right, .split.left, .split.right::before, .split.left::before{
+        transition: all var(--speed) ease-in-out;
+    }
+    .footer{
+        text-align: center;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        height: 10vh;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        z-index: 100;
+    }
+}
+/* body {
+    display: block;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: absolute;
     top: -30;
@@ -71,12 +185,6 @@ h2{
     background-color: var(--right-btn-hover-color);
     border-color: var(--right-btn-hover-color);
 }
-.container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(125, 100, 125);
-}
 .split{
     position: absolute;
     width: 50%;
@@ -110,27 +218,25 @@ h2{
     background-color: var(--right-bg-color)
 }
 .hover-left .left{
-    width: var(--hover-width);
+    width: var(--hover-height);
 }
 
 .hover-left .right{
-    width: var(--other-width);
+    width: var(--other-height);
 }
 .hover-right .right{
-    width: var(--hover-width);
+    width: var(--hover-height);
 }
 
 .hover-right .left{
-    width: var(--other-width);
+    width: var(--other-height);
 }
 .split.right, .split.left, .split.right::before, .split.left::before{
     transition: all var(--speed) ease-in-out;
 }
 .loading-text{
-    /* font-size: 60px;
-    color: blue; */
     height: 0;
-}
+} */
 /* @media(max-width: 414px){
     h1{
         font-size: 20px;
@@ -152,12 +258,15 @@ h2{
     }
     
 } */
-@media screen and (min-width:0px) and (max-width:799px) {
+@media screen and (min-width:469px) and (max-width:3200px) {
     body {
+        display:block;
+        flex-direction: column;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin: 0;
         height: 100vh;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
         position: absolute;
         top: -30;
         left: -30;
@@ -165,9 +274,9 @@ h2{
         height: calc(100vh + 60px);
         z-index: -1;
         filter: blur(0px);
-        overflow-x: hidden;
     }
     h1 {
+        text-align: center;
         font-size: 4rem;
         color: white;
         position: absolute;
@@ -181,11 +290,12 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         margin-top: 0;
         margin-bottom: 0;
         color: white;
         background-color: black;
-        font-size: 110%;
+        font-size: 80%;
     }
     .btn {
         position: absolute;
@@ -221,12 +331,16 @@ h2{
         background-color: rgb(125, 100, 125);
     }
     .split{
+        display: flex;
+        flex-direction: column;
         position: absolute;
         width: 90%;
         height: 100%;
         overflow: hidden;
     }
     .split.left{
+        display: flex;
+        flex-direction: column;
         left: 0;
         background:url('./images/daycarepencils.jpg');
         background-repeat: no-repeat;
@@ -240,6 +354,9 @@ h2{
         background-color: var(--left-bg-color)
     }
     .split.right{
+        display: flex;
+        flex-direction: column;
+        top:0;
         right: 0;
         background:url('./images/webdev.jpg');
         background-repeat: no-repeat;
@@ -270,8 +387,16 @@ h2{
         transition: all var(--speed) ease-in-out;
     }
     .loading-text{
-        /* font-size: 60px;
-        color: blue; */
         height: 0;
+    }
+    .footer{
+        text-align: center;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        height: 10vh;
+        width: 100vw;
+        background-color: rgb(173, 162, 162);
+        z-index: 100;
     }
 }

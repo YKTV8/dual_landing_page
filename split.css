@@ -1,0 +1,101 @@
+:root{
+    --left-bg-color: rgba(125,12,125, 0.7);
+    --right-bg-color: rgba(0,125,0, 0.7);
+
+    --left-btn-hover-color: rgba(125, 12, 125, 1);
+    --right-btn-hover-color: rgba(0, 125, 0, 1);
+
+    --other-width:25%;
+    --hover-width:75%;
+    --other-height:25%;
+    --hover-height:75%;
+    --speed: 1s;
+}
+*{
+    box-sizing: border-box;
+    margin: 0, auto;
+}
+/* Smaller than Mobile Breakpoint */
+@media screen and (max-width:468px) {
+    body{
+        display:flex;
+        flex-direction: row;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow: hidden;
+        height: 100%;
+        background-color: #000000aa;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    /* h1 {
+        font-size: 4rem;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top:20%;
+        transform: translateX(0%);
+        white-space: nowrap;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+        background-color: black;
+    }     */
+    .split{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .split.left{
+        /* left: 0; */
+        top: 0;
+        background:url('./images/daycarepencils.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .split.left::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--left-bg-color)
+    }
+    .split.right{
+        /* right: 0; */
+        bottom: 0;
+        background:url('./images/webdev.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .split.right::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--right-bg-color)
+    }
+    .hover-left .left{
+        height: var(--hover-height);
+    }
+    
+    .hover-left .right{
+        height: var(--other-height);
+    }
+    .hover-right .right{
+        height: var(--hover-height);
+    }
+    
+    .hover-right .left{
+        height: var(--other-height);
+    }
+    .split.right, .split.left, .split.right::before, .split.left::before{
+        transition: all var(--speed) ease-in-out;
+    }
+}
