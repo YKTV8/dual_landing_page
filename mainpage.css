@@ -29,7 +29,7 @@ html{
         flex-direction: column;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin: 0;
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
         position: absolute;
         top: -30;
@@ -43,15 +43,15 @@ html{
     .container{
         display: flex;
         flex-direction: row;
-        height: min-content;
+        height: 100%;
         width:min-content ;
         overflow:hidden ;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 2rem;
         color: white;
         position: absolute;
-        left: 50%;
+        left: 5%;
         top:20%;
         transform: translateX(0%);
         white-space: nowrap;
@@ -65,7 +65,32 @@ html{
         margin-bottom: 0;
         color: white;
         background-color: black;
-    }    
+    }   
+    .btn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        color: white;
+        border: white solid 0.2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 15rem;
+        padding: 1.5rem;
+    }
+    .split.left .btn:hover {
+        background-color: var(--left-btn-hover-color);
+        border-color: var(--left-btn-hover-color);
+    }
+    .split.right .btn:hover {
+        background-color: var(--right-btn-hover-color);
+        border-color: var(--right-btn-hover-color);
+    } 
     .split{
         position: absolute;
         width: 100%;
