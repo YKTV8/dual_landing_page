@@ -2699,9 +2699,11 @@ input, select, textarea {
 	#banner {
 		background-image: url("/childcaresidemaster/childcare-master/images/covercc.png");
 		background-position: center center;
-		background-size: cover;
+		background-size:contain;
+		background-color: #0ac3a5;
+		background-repeat: no-repeat;
 		width: 100vw;
-		height: 28em;
+		height: 58em;
 		text-align: center;
 		position: relative;
 	}
@@ -3061,6 +3063,8 @@ input, select, textarea {
 		/* Nav */
 
 			#page-wrapper {
+				background-size:contain;
+		background-color: #0ac3a5;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;

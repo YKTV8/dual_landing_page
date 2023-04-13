@@ -2699,7 +2699,9 @@ input, select, textarea {
 #banner {
 	background-image: url("/childcaresidemaster/childcare-master/images/covercc.png");
 	background-position: center center;
-	background-size: cover;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-color: #0ac3a5;
 	width: 100vw;
 	height: 28em;
 	text-align: center;
