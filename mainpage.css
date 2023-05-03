@@ -1,6 +1,8 @@
 :root{
-    --left-bg-color: rgba(125,12,125, 0.7);
-    --right-bg-color: rgba(0,125,0, 0.7);
+    /* --left-bg-color: rgba(125,12,125, 0.7);
+    --right-bg-color: rgba(0,125,0, 0.7); */
+    --left-bg-color: rgba(128, 84, 128, 0.7);
+    --right-bg-color: rgba(88, 131, 88, 0.7);
 
     --left-btn-hover-color: rgba(125, 12, 125, 1);
     --right-btn-hover-color: rgba(0, 125, 0, 1);
@@ -10,34 +12,38 @@
     --other-height:25%;
     --hover-height:75%;
 
-    --speed: 1s;
+    --speed: 1.5s;
 }
 html{
     margin: 0;
-    height:fit-content;
-    background-color: black;
+    height: 100vh;
+    width: fit-content;
+    /* background-color: black; */
 }
 *{
     box-sizing: border-box;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 /* Smaller than Mobile Breakpoint */
 @media screen and (max-width:468px) {
+    html{
+        height: 0vh;
+    }
     body {
-        display:block;
+        display:flex;
         flex-direction: column;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin: auto;
-        height: 100%;
-        overflow: hidden;
+        height: 50%;
+        width: fit-content;
         position: absolute;
         top: -30;
         left: -30;
-        width: calc(100vw + 60px);
-        height: calc(750px);
+        width: calc(100vw);
+        height: calc(120vh);
         z-index: -1;
         filter: blur(0px);
         overflow-x: hidden;
@@ -46,11 +52,11 @@ html{
         display: flex;
         flex-direction: row;
         height: 100%;
-        width:min-content ;
+        width: fit-content ;
         overflow:hidden ;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.82rem;
         color: white;
         position: absolute;
         left: 5%;
@@ -63,6 +69,7 @@ html{
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 5%;
         margin-top: 0;
         margin-bottom: 0;
         color: white;
@@ -145,11 +152,12 @@ html{
         transition: all var(--speed) ease-in-out;
     }
     .footer{
+        font-size: 70%;
         text-align: center;
         display: flex;
-        position: absolute;
+        position:absolute;
         bottom: 0;
-        height: 10vh;
+        height: 5vh;
         width: 100%;
         background-color: rgb(0, 0, 0);
         z-index: 100;
