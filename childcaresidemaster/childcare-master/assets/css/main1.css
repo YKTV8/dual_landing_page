@@ -197,6 +197,7 @@ input, select, textarea {
 
 			.container {
 				width: 1200px;
+				height: auto;
 			}
 
 		}
@@ -221,6 +222,7 @@ input, select, textarea {
 
 			.container {
 				width: 95%;
+				height: auto;
 			}
 
 		}
@@ -229,6 +231,7 @@ input, select, textarea {
 
 			.container {
 				width: 90%;
+				height: auto;
 			}
 
 		}
@@ -237,6 +240,7 @@ input, select, textarea {
 
 			.container {
 				width: 100%;
+				height: auto;
 			}
 
 		}
@@ -2699,7 +2703,7 @@ input, select, textarea {
 #banner {
 	background-image: url("/childcaresidemaster/childcare-master/images/covercc.png");
 	background-position: center center;
-	background-size:cover;
+	background-size:95%;
 	background-repeat: no-repeat;
 	background-color: #0ac3a5;
 	width: 100vw;
@@ -3373,7 +3377,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 2em 20px 75em 20px;
+				padding: 2em 20px 1.75em 20px;
 			}
 
 		/* CTA */
@@ -3476,7 +3480,7 @@ input, select, textarea {
 		/* margin-top: 150px; */
 		display: flex;
 		flex-direction: row;
-		height: 80vh;
+		height: 100vh;
 		width: 90vw;
 		transition: flex 5s ease-in;
 		z-index: -5;
@@ -3599,7 +3603,7 @@ input, select, textarea {
 				margin-bottom: 100px;
 				display: flex;
 				flex-direction: column;
-				height: 40vh;
+				height: 180vh;
 				width: 90vw;
 				transition: flex 5s ease-in;
 				z-index: -5;
@@ -3745,7 +3749,7 @@ input, select, textarea {
 				margin-bottom: 100px;
 				display: flex;
 				flex-direction: column;
-				height: 40vh;
+				height: 20%;
 				width: 90vw;
 				transition: flex 5s ease-in;
 				z-index: -5;
