@@ -3394,7 +3394,7 @@ input, select, textarea {
 			}
 
 	}
-	/* mett the staff styles */
+	/* meet the staff styles */
 	
 
 
@@ -3470,7 +3470,7 @@ input, select, textarea {
 	.panel.active{
 		border-radius: 50px;
 		flex:5;
-		opacity: .75;
+		opacity: .85;
 		transform:translateY(0%)
 	}
 	.panel.active h3{
@@ -3493,7 +3493,7 @@ input, select, textarea {
 	} */
 	.overlay{
 	background-color: white;
-	padding: 2rem;
+	padding: .8rem;
 	position: absolute;
 	border-radius: 50px;
 	left:0;
@@ -3508,7 +3508,7 @@ input, select, textarea {
 	}
 	.overlay1{
 		background-color: white;
-		padding: 2rem;
+		padding: .8rem;
 		position: absolute;
 		border-radius: 50px;
 		left:0;
@@ -3523,7 +3523,7 @@ input, select, textarea {
 		}
 	.overlay2{
 		background-color: white;
-		padding: 2rem;
+		padding: .8rem;
 		position: absolute;
 		border-radius: 50px;
 		left:0;
@@ -3538,7 +3538,7 @@ input, select, textarea {
 		}
 	.overlay3{
 		background-color: white;
-		padding: 2rem;
+		padding: .8rem;
 		position: absolute;
 		border-radius: 50px;
 		left:0;
@@ -3553,7 +3553,7 @@ input, select, textarea {
 		}
 	.overlay4{
 		background-color: white;
-		padding: 2rem;
+		padding: .8rem;
 		position: absolute;
 		border-radius: 50px;
 		left:0;
@@ -3568,7 +3568,7 @@ input, select, textarea {
 		}
 	.overlay5{
 		background-color: white;
-		padding: 2rem;
+		padding: .8rem;
 		position: absolute;
 		border-radius: 50px;
 		left:0;
@@ -3600,7 +3600,7 @@ input, select, textarea {
 		@media screen and (min-width:100px) and (max-width:391px) {
 			.container1{
 				/* margin-top: 150px; */
-				margin-bottom: 100px;
+				margin-bottom: 250px;
 				display: flex;
 				flex-direction: column;
 				height: 180vh;
@@ -3877,6 +3877,7 @@ input, select, textarea {
 		@media screen and (min-width:340px)and (max-width:463px){
 			.container1 p{
 				/* font-size-adjust: 58; */
+				line-height: 150%;
 				font-size: .65rem;
 				padding: 2% 0%;
 			}
@@ -4198,7 +4199,7 @@ input, select, textarea {
 			.panel.active{
 				border-radius: 50px;
 				flex:5;
-				opacity: .75;
+				opacity: .85;
 				transform:translateY(0%)
 			}
 			.panel.active h3{
