@@ -1,8 +1,8 @@
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
 const container = document.querySelector('.container')
-const loadText = document.querySelector('.loading-text')
-const bg = document.querySelector('.container')
+
+// const bg = document.querySelector('.container')
 
 // let load = 0
 // let int = setInterval(blurring,  0);
