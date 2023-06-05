@@ -2943,7 +2943,7 @@ input, select, textarea {
 /* Narrower */
 
 	#navPanel, #titleBar {
-		display: none;
+		display: block;
 	}
 
 	@media screen and (max-width: 840px) {
