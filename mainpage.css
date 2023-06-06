@@ -223,11 +223,15 @@ html{
         background-color: var(--left-btn-hover-color);
         border-color: var(--left-btn-hover-color);
         color: black;
+        border-radius: 25px;
+        border: 5px rgba(224,170,62, 1) solid;
     }
     .split.right .btn:hover {
         background-color: var(--right-btn-hover-color);
         border-color: var(--right-btn-hover-color);
         color: black;
+        border-radius: 25px;
+        border: 5px rgba(125, 12, 125, 1) solid;
     }
     .container{
         display: flex;
