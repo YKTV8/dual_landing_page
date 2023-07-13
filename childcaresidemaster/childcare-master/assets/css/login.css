@@ -25,7 +25,8 @@ body{
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
-    background: rgba(159, 27, 211, 0.5);
+    /* background: rgba(159, 27, 211, 0.5); */
+    background-color: #eeeeee;
 }
 .container,.form__input,.form__button{
     font: 500 1rem 'georgia';
