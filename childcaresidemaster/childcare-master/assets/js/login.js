@@ -1,12 +1,3 @@
-// function setFormMessage(formElement, type, message){
-//     const messageElement = formElement.querySelector("form__message");
-//     messageElement.textContent = message;
-//     messageElement.classlist.remove ("form__message--success", "form__message--error");
-//     messageElement.classlist.add('form__message--${type}');
-// }
-
-// setFormMessage(loginForm, "success", "you're logged in!");
-
 function setFormMessage(formElement, type, message){
     const messageElement = formElement.querySelector(".form__message");
 
