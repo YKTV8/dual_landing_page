@@ -9,6 +9,9 @@ html{
     top: 0;
     left: 0;
     width: 100vw;
+	height: 35vh;
+	margin-top: 0%;
+	margin-bottom: 0%;
     text-align: center;
     padding: 13em 0 0 0;
     color: blueviolet;
@@ -20,7 +23,7 @@ html{
 }
 
     #header h1 {
-        padding: 0 0 2.75em 0;
+        padding: 0 0 2em 0;
         margin: 0;
     }
 
@@ -31,6 +34,8 @@ html{
         }
 
 #nav {
+	top: 0;
+	left: 0;
     cursor: default;
     background-color: #333;
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
@@ -123,7 +128,7 @@ body{
     --color-background: rgba(0,0,0, 0.85);
     --border-radius: 4px;
     margin: 0;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -131,8 +136,8 @@ body{
     font-size: 18px;
     /* background: url(/childcaresidemaster/childcare-master/images/bubbles.jpeg); */
     background:url(/images/daycarepencils.jpg);
-    background-size:cover;
-    background-position: 50%;
+    background-size: cover;
+    background-position-y: 90%;
 }
 .container{
     width: 400px;
@@ -2784,7 +2789,9 @@ input, select, textarea {
 /* Header */
 
 	#header {
+		top: 0;
 		text-align: center;
+		margin: 10px;
 		padding: 3em 0 0 0;
 		color: #8a2be2;
 		background-color: #0ac3a5;
@@ -2935,7 +2942,7 @@ input, select, textarea {
 		background-color: #0ac3a5;
 		background-repeat: no-repeat;
 		width: 100vw;
-		height: 58em;
+		height: 15em;
 		text-align: center;
 		position: relative;
 	}
@@ -3175,7 +3182,7 @@ input, select, textarea {
 /* Narrower */
 
 	#navPanel, #titleBar {
-		display: block;
+		display: none;
 	}
 
 	@media screen and (max-width: 840px) {
