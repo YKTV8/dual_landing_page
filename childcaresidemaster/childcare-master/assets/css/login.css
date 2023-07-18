@@ -129,20 +129,21 @@ body{
     --border-radius: 4px;
     margin: 0;
     height: 120vh;
+	width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center ;
     justify-content: center;
     font-size: 18px;
-    /* background: url(/childcaresidemaster/childcare-master/images/bubbles.jpeg); */
     background:url(/images/daycarepencils.jpg);
     background-size: cover;
     background-position-y: 90%;
+	overflow-x: hidden;
 }
 .container{
     width: 400px;
     height: 400px;
-    margin: 1rem;
+    margin: 10rem,1rem, 1rem, 1rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
@@ -433,7 +434,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.container {
-				width: 1200px;
+				width: 400px;
 			}
 
 		}
@@ -441,7 +442,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.container {
-				width: 960px;
+				width: 560px;
 			}
 
 		}
@@ -449,7 +450,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.container {
-				width: 95%;
+				width: 55%;
 			}
 
 		}
@@ -457,7 +458,7 @@ input, select, textarea {
 		@media screen and (max-width: 840px) {
 
 			.container {
-				width: 95%;
+				width: 55%;
 			}
 
 		}
@@ -465,7 +466,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.container {
-				width: 90%;
+				width: 60%;
 			}
 
 		}
@@ -2789,9 +2790,10 @@ input, select, textarea {
 /* Header */
 
 	#header {
+		position: absolute;
 		top: 0;
 		text-align: center;
-		margin: 10px;
+		margin: 0px;
 		padding: 3em 0 0 0;
 		color: #8a2be2;
 		background-color: #0ac3a5;
