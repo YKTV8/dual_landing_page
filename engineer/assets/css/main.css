@@ -624,6 +624,7 @@ input, select, textarea {
 		background: #ffffff;
 		color: #39454b;
 		padding: 2em;
+		font-size: 1.3rem;
 	}
 
 		.box > :last-child {
@@ -2265,7 +2266,7 @@ input, select, textarea {
 		background: url("/engineer/images/mobilejava.jpg");
 		background-size:cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background-position:  center center;
 		background-repeat: no-repeat;
 	}
 
@@ -2275,7 +2276,7 @@ input, select, textarea {
 		background: url("/engineer/images/set\ up.jpg");
 		background-size:cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background-position:  center center;
 		background-repeat: no-repeat;
 	}
 
