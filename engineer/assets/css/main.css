@@ -662,7 +662,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: rgba(51, 156, 94, 0.95);
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -719,7 +719,9 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #6f6f6f;
+			color: rgb(51, 156, 94);
+			font-weight: 600;
 		}
 
 		input[type="button"]:active,
@@ -962,7 +964,7 @@ input, select, textarea {
 
 		.image:before {
 			content: '';
-			position: absolute;
+			position: relative;
 			left: 0;
 			top: 0;
 			width: 100%;
@@ -983,8 +985,8 @@ input, select, textarea {
 
 		.image.fit {
 			/* display: block; */
-			background-size: contain;
-			background-position: center;
+			background-size: cover;
+			background-position: center center;
 			width: 100%;
 		}
 
@@ -2048,7 +2050,7 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background: #d3ebe9;
 			}
 
 			.main.style3.secondary {
@@ -2182,7 +2184,8 @@ input, select, textarea {
 		line-height: 1em;
 		padding: 1.5em;
 		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
+		color: rgba(51, 156, 94, 0.95);
+		font-weight: 800;
 		overflow: hidden;
 	}
 
@@ -2249,7 +2252,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("/engineer/images/language.jpg");
+		background: url("/engineer/images/focus.jpg");
 		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: bottom left, bottom center;
@@ -2282,7 +2285,7 @@ input, select, textarea {
 		color: #fff;
 		overflow: hidden;
 		padding-bottom: 0;
-		background-image: url(/engineer/images/coverbg.png);
+		background-color: rgba(51, 156, 94, 0.9);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
