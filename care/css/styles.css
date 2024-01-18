@@ -8,7 +8,10 @@ html{
     background-repeat: no-repeat;
     background-position: center;
 }
-
+h1{
+    text-align: center;background-color: rgba(27, 27, 27, 0.7);
+    color: orange;
+}
 a{
     width: fit-content;
     color: rgb(107, 107, 8);
@@ -169,13 +172,14 @@ p{
         z-index: -1;
     }
     .container{
-        overflow: hidden;
-        margin: 15% 1%;
+        /* overflow: hidden; */
+        margin: 15vh 1vw 0vh 1vw;
         display: flex;
         flex-wrap: wrap;
         position:relative;
-        left: 350px;
+        left: 300px;
         flex-direction: row;
+        
         justify-content: center;
         justify-self: center;
         justify-items: center;
