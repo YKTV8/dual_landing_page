@@ -6,161 +6,76 @@
 -->
 <html>
 	<head>
-		<title>Chae & Marie Solutions LLC - Meet the Staff</title>
+		<title>Chae & Marie Solutions LLC - Child Care</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/care/css/styles.css" />
 	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<div id="header">
-
-					<!-- Logo -->
-					<h1 id="logo">Chae & Marie Solutions LLC - Child Care</h1>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-                    			<li><a href="#">Home</a></li>
-                    			<li><a href="#">Meet The Staff</a></li>
-                    			<li><a href="#">Our Facility</a></li>
-								<li><a href="#">Log In/ Sign up</a></li>
-								<li><a href="#">Need WebDev?</a></li>
-							</ul>
-						</nav>
-				</div>
-				<!-- Banner -->
-				<section id="banner">
-					<header>
-						<!-- <h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-						<a href="#" class="button">Learn More</a> -->
-					</header>
-				</section>
-			<!-- Main -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-8 col-12-narrower">
-								<div id="content">
-
-									<!-- Content -->
-
-										<article>
-											<header>
-												<h2>Our Home</h2>
-											</header>
-
-											<!-- <span class="image featuredbanner"><img src="images/bubbles.jpeg" /></span> -->
-											<div class="featurebanner"><img src="images/bubbles.jpeg"></div>
-
-											<div class="main1">
-												<p>We have recently renovated our 'Play area' for our Littles. In order to
-													accommodate for all of our Littles, we've installed premium artificial turf. 
-													Regardless of allergies, any child can safely participate with outdoor activities such as sports,
-													bubbles, gentle water activities - all while eliminating the chance of grass stains!</p>
-		
-													<p>Our 'Learning area' has been strategically assembled to allow our littles to use their 
-													imaginations and explore. We have plenty of books for designated story time, interactive
-													learning games, space for arts and crafts, activity mats, and a healthy dose of screen time 
-													with Leap Frog!</p>
-		
-													<p>Our 'Quiet room' is designed for our littles to recharge from the excitement they endure here at care. 
-													'Quiet room' is equipped with white noise maker, video/audio baby monitors and separated sleeping areas for personal sleep space.</p>
-											</div>
-											
-										</article>
-
-								</div>
-							</div>
-							<div class="col-4 col-12-narrower">
-								<div id="sidebar">
-
-									<!-- Sidebar -->
-								</div>
-							</div>
+	<body>
+		<video autoplay muted loop id="myVideo" src="/care/img/ballpit.mp4" type="video.mp4"></video>
+		<div class="container">
+			<div class="container_signupBox">
+			<h2>Sign Up</h2>
+			<section>
+				<div class="loginBox">
+					<form action="includes/signup.inc.php" method="post" novalidate>
+						<div class="nameContainer">                                                                                                                                                                                                                               <div class="uidContainer">
+							<label for="uid"></label>
+							<input type="text" id="username" name="uid" required placeholder="username">
+						</div>                                                                 
 						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<section class="col-3 col-6-narrower col-12-mobilep">
-							<h3>Resources</h3>
-							<ul class="links">
-								<li><a href="https://preventchildabuse.org/">Prevent Child Abuse</a></li>
-								<li><a href="https://www.dshs.wa.gov/bha">Behavioral Development</a></li>
-								<li><a href="https://risewiththealliance.org/">Alliance for Child Welfare Excellence</a></li>
-								<li><a href="https://www.dshs.wa.gov/">Department of Social & Health Services</a></li>
-								<li><a href="https://www.dcyf.wa.gov/services/child-development-supports/esit">Early Support for Infant and Toddler Development</a></li>
-							</ul>
-						</section>
-						<section class="col-3 col-6-narrower col-12-mobilep">
-							<!-- <h3>More Links to Stuff</h3>
-							<ul class="links">
-								<li><a href="#">Duis neque nisi dapibus</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum accumsan sed</a></li>
-								<li><a href="#">Mattis et sed accumsan</a></li>
-								<li><a href="#">Duis neque nisi sed</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum amet varius</a></li>
-							</ul> -->
-						</section>
-						<section class="col-6 col-12-narrower">
-							<h3>Get In Touch</h3>
-							<form action="https://formsubmit.co/bmatthews0429@outlook.com" method="POST">
-								<div class="row gtr-50">
-									<div class="col-6 col-12-mobilep">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-mobilep">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" class="button alt" value="Send Message" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-					</div>
+						<br>
+						<div class="emailContainer">
+							<label for="email"></label>
+							<input type="text" id="email" name="email" required placeholder="Email">
+						</div>
+							<br>
+							<div class="passwordContainer">
+								<label for="password"></label>
+							<input type="password" id="password" name="pwd" required placeholder="Password">
+							</div>
+							<br>
+							<div class="passwordConfirmContainer">
+								<label for="passwordConfirm"></label>
+								<input type="password" name="pwdrepeat" required id="passwordConfirm" placeholder="Confirm Password">
+							</div>
+						   
+							<div class="tapInButton">
+								<button type="submit" name="submit">Tap In</button>
+							</div>
+							&nbsp;
+							<br><br>
+							<a href="#">Forgot Password?</a>
+							<br>
+					</form>
 				</div>
-
-				<!-- Icons -->
-					<ul class="icons">
-						
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-			
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						
-					</ul>
-
-				<!-- Copyright -->
-					<div class="copyright">
-						<ul class="menu">
-							<li>&copy; Chae & Marie Solutions, LLC. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-
+			</div>
+			<h4>OR</h4>
+			<div class="container_loginBox">
+			<h2>Log In</h2>
+			<section>
+				<div class="loginBox">
+					<form action="./includes/login.inc.php" method="post" novalidate>
+	
+					<input type="text" name="uid" placeholder="Username/Email"> <br> <br>
+					<input type="password" name="pwd" placeholder="Password..."> <br>
+				   
+							<div class="logInButton">
+								<button type="submit" name="submit">Tap In</button>
+							</div>
+							&nbsp;
+							<br><br>
+							<a href="#">Forgot Password?</a>
+							<br>
+							<br>
+							<a href="#">Already have an account? Login Now!</a>
+					</form>
 				</div>
-
+			</section>
 		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		</div>
+			</section>
+			<h1>Under Construction....</h1>
+		</div>
 	</body>
 </html>
