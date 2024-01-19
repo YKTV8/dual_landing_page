@@ -51,7 +51,7 @@ p{
         height: 100vh;
         overflow: hidden;
         background-color: rgba(255, 255, 255, 0.2);
-        background-size: cover;
+        background-size: contain;
         z-index: 2;
     }
     #myVideo{
@@ -64,7 +64,7 @@ p{
     }
     .container{
         overflow: hidden;
-        margin: 5% 15%;
+        margin: 2vh 10vw 1vh 15vw;
         display: flex;
         flex-wrap: wrap;
         position:relative;
@@ -105,7 +105,7 @@ p{
     }
     .container{
         overflow: hidden;
-        margin: 25% 5%;
+        margin: 15vh 1vw 0vh 1vw;
         display: flex;
         flex-wrap: wrap;
         position:relative;
@@ -139,7 +139,7 @@ p{
     }
     .container{
         overflow: hidden;
-        margin: 25% 5%;
+        margin: 15vh 5vw 0vh 10vw;
         display: flex;
         flex-wrap: wrap;
         position:relative;
@@ -179,7 +179,6 @@ p{
         position:relative;
         left: 300px;
         flex-direction: row;
-        
         justify-content: center;
         justify-self: center;
         justify-items: center;
@@ -200,7 +199,7 @@ p{
     /* .container_loginBox{
         margin: 5% 5%;
     } */
-}@media screen and (min-width:1921px) and (max-width:9800px){
+}@media screen and (min-width:1921px) and (max-width:50000px){
     body{
         height: 100vh;
         overflow: hidden;
@@ -218,21 +217,20 @@ p{
     }
     .container{
         overflow: hidden;
-        margin: 25% 5%;
+        margin: 15vh 15vw 0vh 0vw;
         display: flex;
         flex-wrap: wrap;
         position:relative;
-        left: 250px;
-        flex-direction: column;
+        left: 350px;
+        flex-direction: row;
         justify-content: center;
         justify-self: center;
         justify-items: center;
-        /* background-color: rgba(255, 255, 255, 0.65); */
-        background-color: red;
         border-radius: 20px;
         height: 450px;
         width: 50%;
         font-weight: 350px;
+        background-color: rgba(255, 255, 255, 0.65);
     }
 }
 body{
