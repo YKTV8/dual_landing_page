@@ -460,7 +460,7 @@ input, select, textarea {
 			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #ec7777;
+			background: rgb(51, 156, 94);
 			content: '';
 			display: block;
 			height: 100%;

@@ -105,7 +105,7 @@ p{
     }
     .container{
         overflow: hidden;
-        margin: 15vh 1vw 0vh 1vw;
+        margin: 45vh 1vw 0vh 1vw;
         display: flex;
         flex-wrap: wrap;
         position:relative;
@@ -234,6 +234,9 @@ p{
     }
 }
 body{
-
-    background-color: aliceblue;
+    z-index: 6;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #1C6EA4 0%, #b8d1e2 91%, #9f33fd 100%);
+    background: -webkit-linear-gradient(top, #1C6EA4 0%, #b8d1e2 91%, #9f33fd 100%);
+    background: linear-gradient(to bottom, #1C6EA4 0%, #b8d1e2 91%, #9f33fd 100%);
 }
