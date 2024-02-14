@@ -12,6 +12,7 @@ session_start();
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    
     <video autoplay muted loop id="myVideo" src="./img/ballpit.mp4" type="video.mp4"></video>
     <div class="container">
         <div class="container_signupBox">

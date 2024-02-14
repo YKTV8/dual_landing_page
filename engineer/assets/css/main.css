@@ -1456,7 +1456,7 @@ input, select, textarea {
 			.gallery article .image {
 				margin: 0;
 				display: block;
-				background-size: cover;
+				background-size:50%;
 			}
 
 			.gallery article:nth-last-child(1n) {

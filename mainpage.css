@@ -89,10 +89,10 @@ html{
         text-decoration: none;
         color: white;
         border: white solid 0.2rem;
-        font-size: 1rem;
+        font-size: 0.65rem;
         font-weight: bold;
         text-transform: uppercase;
-        width: 15rem;
+        width: 35%;
         padding: 1.5rem;
     }
     .split.left .btn:hover {
@@ -113,7 +113,7 @@ html{
     .split.left{
         /* left: 0; */
         top: 0;
-        background:url('./images/daycarepencils.jpg');
+        background:url('./engineer/images/baerock.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -127,7 +127,7 @@ html{
     .split.right{
         /* right: 0; */
         bottom: 0;
-        background:url('./images/webdev.jpg');
+        background:url('./engineer/images/code.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -260,7 +260,8 @@ html{
         display: flex;
         flex-direction: column;
         left: 0;
-        background:url('./images/daycarepencils.jpg');
+        background:url('./engineer/images/baerock.jpg');
+        background-position-y: 50% ;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -276,7 +277,7 @@ html{
         flex-direction: column;
         top:0;
         right: 0;
-        background:url('./images/webdev.jpg');
+        background:url('./engineer/images/code.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
