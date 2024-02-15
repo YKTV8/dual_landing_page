@@ -1,7 +1,6 @@
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
 const container = document.querySelector('.container')
-
 // const bg = document.querySelector('.container')
 
 // let load = 0
@@ -25,3 +24,4 @@ left.addEventListener('mouseleave',()=> container.classList.remove('hover-left')
 
 right.addEventListener('mouseenter',() => container.classList.add('hover-right'))
 right.addEventListener('mouseleave',()=> container.classList.remove('hover-right'))
+
