@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 90%;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -1890,7 +1890,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.5em;
+				height: auto;
 				line-height: 2.5em;
 			}
 
@@ -1965,7 +1965,7 @@ input, select, textarea {
 		}
 
 			.main.style1 h2 {
-				font-size: 4.25em;
+				font-size: 3.75em;
 				line-height: 1em;
 			}
 
@@ -2273,7 +2273,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("/engineer/images/set\ up.jpg");
+		background: url("/engineer/images/floyd.jpg");
 		background-size:cover;
 		background-attachment: fixed, fixed;
 		background-position:  center center;
