@@ -64,7 +64,7 @@ html{
         left: 5%;
         top:20%;
         transform: translateX(0%);
-        white-space: nowrap;
+        white-space: wrap;
     }
     h2{
         display: flex;
