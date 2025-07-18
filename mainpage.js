@@ -1,6 +1,6 @@
-const left = document.querySelector('.left')
-const right = document.querySelector('.right')
-const container = document.querySelector('.container')
+// const left = document.querySelector('.left')
+// const right = document.querySelector('.right')
+// const container = document.querySelector('.container')
 // const bg = document.querySelector('.container')
 
 // let load = 0
@@ -15,13 +15,13 @@ const container = document.querySelector('.container')
 //     loadText.style.opacity = scale(load, 0, 100, 1, 0)
 //     bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
 // }
-function scale (number, inMin, inMax, outMin, outMax) {
-    return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
-}
+// function scale (number, inMin, inMax, outMin, outMax) {
+//     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+// }
 
-left.addEventListener('mouseenter',() => container.classList.add('hover-left'))
-left.addEventListener('mouseleave',()=> container.classList.remove('hover-left'))
+// left.addEventListener('mouseenter',() => container.classList.add('hover-left'))
+// left.addEventListener('mouseleave',()=> container.classList.remove('hover-left'))
 
-right.addEventListener('mouseenter',() => container.classList.add('hover-right'))
-right.addEventListener('mouseleave',()=> container.classList.remove('hover-right'))
+// right.addEventListener('mouseenter',() => container.classList.add('hover-right'))
+// right.addEventListener('mouseleave',()=> container.classList.remove('hover-right'))
 
