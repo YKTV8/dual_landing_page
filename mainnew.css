@@ -130,3 +130,51 @@ a.btn:hover{
         height: 15%;
     }
 }
+@media screen and (max-width:1000px){
+    body,input, textarea, select{
+        font-size: 13pt;
+    }
+    button{
+        width:fit-content;
+        top: 40%;
+    }
+     h3{
+        font-size: 160%;
+         text-align: center;
+    }
+    .welcomeTo{
+        height: 15%;
+    }
+}
+@media screen and (max-width:736px){
+    body,input, textarea, select{
+        font-size: 13pt;
+    }
+    button{
+        width:fit-content;
+        top: 40%;
+    }
+     h3{
+        font-size: 160%;
+         text-align: center;
+    }
+    .welcomeTo{
+        height: 15%;
+    }
+}
+@media screen and (max-width:480px){
+    body,input, textarea, select{
+        font-size: 13pt;
+    }
+    button{
+        width:fit-content;
+        top: 40%;
+    }
+     h3{
+        font-size: 160%;
+         text-align: center;
+    }
+    .welcomeTo{
+        height: 15%;
+    }
+}
